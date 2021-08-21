@@ -16,15 +16,11 @@ The user guide corresponding to this version of the framework can be found
 
 ## Installation & updates
 
-git clone https://github.com/zainmstf/hotel.git
+`git clone https://github.com/zainmstf/hotel.git`
 
-composer update
+`composer update`
 
-npm update
-
-npm run dev
-
-php spark serve
+`php spark serve`
 
 ## Setup
 

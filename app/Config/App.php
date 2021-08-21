@@ -24,6 +24,10 @@ class App extends BaseConfig
 	 * @var string
 	 */
 	public $baseURL = 'http://localhost:8080/';
+	//Jika Menggunakan LiveServer
+	public $baseURL = 'http://localhost/hotel/public';
+	//Jika Menggunakan xampp
+
 
 	/**
 	 * --------------------------------------------------------------------------

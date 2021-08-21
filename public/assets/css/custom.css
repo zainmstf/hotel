@@ -1,0 +1,40 @@
+.mt-10 {
+  margin-top: 12%;
+}
+.bg-login-image {
+  background: url('../images/bg-login.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.sidebar .nav-item .nav-link[data-toggle='collapse']::after {
+  width: 1rem;
+  text-align: center;
+  float: right;
+  vertical-align: 0;
+  border: 0;
+  font-weight: 900;
+  content: '';
+  font-family: 'Font Awesome 5 Free';
+}
+
+button.btn.btn-primary.action {
+  margin-bottom: 15%;
+}
+
+th,
+td {
+  vertical-align: middle !important;
+  text-align: center;
+}
+h6.m-0.font-weight-bold.text-primary {
+  float: left;
+  padding: 10px;
+}
+.tambahmodal {
+  float: right;
+  font-size: 0.5rem;
+}
+label.fs-4 {
+  font-size: 1rem;
+}

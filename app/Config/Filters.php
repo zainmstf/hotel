@@ -6,6 +6,7 @@ use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
+use App\Filters\FilterUser;
 
 class Filters extends BaseConfig
 {
@@ -19,6 +20,7 @@ class Filters extends BaseConfig
 		'csrf'     => CSRF::class,
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
+		'FilterUser' => \App\Filters\FilterUser::class,
 	];
 
 	/**
@@ -31,8 +33,18 @@ class Filters extends BaseConfig
 		'before' => [
 			// 'honeypot',
 			// 'csrf',
+			'FilterUser' => ['except' => [
+				'/',
+				'auth', 'auth/*',
+			]],
 		],
 		'after'  => [
+			'FilterUser' => ['except' => [
+				'dashboard',
+				'kamar',
+				'booking',
+				'auth', 'auth/*',
+			]],
 			'toolbar',
 			// 'honeypot',
 		],
